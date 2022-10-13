@@ -1,0 +1,23 @@
+package day02;
+
+public class 선형검색예제01 {
+
+	public static void main(String[] args) {
+		// 배열안에 값을 넣기
+		int[] a = { 6, 4, 3, 2, 1, 2, 8 };
+		int key = 2;
+		boolean flag = false;
+
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] == key) {
+				flag = true;
+				System.out.println("찾았다");
+				break;
+			}
+			if (!flag) {
+				System.out.println("못 찾았다.");
+			}
+		}
+	}
+
+}
